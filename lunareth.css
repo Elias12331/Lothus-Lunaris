@@ -1,0 +1,225 @@
+/* ════════════════════════════════════════════════════════════
+   LUNARETH — CODEX LUNARUM
+   Décima segunda edição do arquivo lunar · Família Lunaris
+   ════════════════════════════════════════════════════════════ */
+.theme-lunareth{--theme:#dfd1b5}
+.lunareth-home-art .archive-orbit{width:124px;height:124px;border-color:#e5d1b943;animation:lunaHomeRing 32s linear infinite}
+.lunareth-home-art .archive-symbol{font-size:80px;background:linear-gradient(130deg,#fff8d8,#d9d3ec 70%);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(0 0 21px #dcd6ff6a);animation:lunaBreathe 5s ease-in-out infinite alternate}
+.luna-home-star{position:absolute;right:28%;top:11%;font-size:22px;color:#f5e5c4;text-shadow:0 0 20px #f4dfba91}
+@keyframes lunaHomeRing{to{transform:rotate(360deg)}}
+@keyframes lunaBreathe{to{transform:scale(1.12);filter:drop-shadow(0 0 31px #e9d8ffbb)}}
+
+.lunareth-view{--moon:#e6d6b8;color:#efeef8}
+.lunareth-cover{--moon:#e3d4b8;min-height:415px;position:relative;isolation:isolate;display:grid;grid-template-columns:minmax(0,1fr) minmax(330px,440px);align-items:center;overflow:hidden;border-radius:21px;border:1px solid #e6d2b53d;background:radial-gradient(ellipse at 73% 58%,#8277ac30,transparent 42%),radial-gradient(ellipse at 7% 100%,#4e617341,transparent 58%),linear-gradient(110deg,#111c30,#1a1a35 55%,#111b30);box-shadow:inset 0 1px #fff2,0 28px 70px #0609175c}
+.lunareth-cover:before{content:'';position:absolute;inset:0;pointer-events:none;background-image:radial-gradient(#f7eece7b 0.8px,transparent 1.1px),radial-gradient(#e1dcff70 .7px,transparent 1px);background-size:78px 87px,117px 141px;background-position:19px 20px,64px 77px;opacity:.42}
+.lunareth-cover:after{content:'';position:absolute;inset:0;pointer-events:none;background:linear-gradient(130deg,transparent 42%,#bbd3ff05 45%,transparent 49%)}
+.lunareth-cover-copy{z-index:2;padding:40px 0 63px 48px;max-width:690px}
+.lunareth-cover .overline{color:#d9c9ad;font-size:9px;letter-spacing:.23em}
+.luna-overline{font-size:10px;letter-spacing:.24em;color:#d7c9e8;margin:39px 0 13px}
+.lunareth-cover h1{font:400 clamp(59px,6vw,91px)/.93 var(--serif);letter-spacing:-.045em;margin:0;color:#f6f0ed;text-wrap:balance}
+.lunareth-cover h1 em{font-weight:400;color:#ddcfb2;letter-spacing:-.03em}
+.luna-cover-quote{font:italic 26px/1.26 var(--serif);color:#e8d6bb;margin:22px 0 11px}
+.luna-cover-desc{font-size:12px;color:#abb5cc;line-height:1.85;max-width:450px;margin-bottom:19px}
+.luna-cover-pills{display:flex;gap:8px;flex-wrap:wrap;max-width:590px}
+.luna-cover-pills span{padding:8px 11px;font-size:9px;letter-spacing:.1em;color:#cfc1b4;border:1px solid #e5d5b735;background:#e6d9b509;border-radius:30px}
+.lunareth-cover-bottom{position:absolute;bottom:17px;left:48px;right:35px;display:flex;justify-content:space-between;gap:12px;padding-top:12px;border-top:1px solid #e6d3bc27;color:#afa9b7;font-size:9px;letter-spacing:.15em;z-index:3}
+.luna-sky{position:absolute;color:#f5e8c3;font:24px var(--serif);animation:lunaBreathe 8s ease-in-out infinite alternate}
+.speck-one{left:49%;top:15%;opacity:.4}.speck-two{left:64%;bottom:13%;font-size:13px;opacity:.47;animation-delay:-3s}.speck-three{right:2%;top:11%;opacity:.4;animation-delay:-6s}
+.lunareth-astrarium{--r:147px;width:360px;height:360px;position:relative;justify-self:center;align-self:center;z-index:1;filter:drop-shadow(0 0 38px #afabe51e)}
+.lunareth-astrarium:before{content:'';position:absolute;inset:6%;border-radius:50%;background:radial-gradient(circle,#daccd512 0%,#c8bbf309 47%,transparent 70%)}
+.lunareth-outer-wheel,.lunareth-inner-wheel,.lunareth-middle-wheel{position:absolute;border-radius:50%;border:1px solid #e7d2b65c;pointer-events:none}
+.lunareth-outer-wheel{inset:23px;border-style:dashed;border-color:#e1d4bb42;animation:lunaSpin 150s linear infinite}
+.lunareth-outer-wheel:before,.lunareth-outer-wheel:after{content:'✧';position:absolute;color:#f1dbba;font-size:12px;top:0;left:52%;background:#23213c}
+.lunareth-outer-wheel:after{top:auto;bottom:-6px;left:23%;font-size:9px}
+.lunareth-inner-wheel{inset:106px;border-color:#f3ddb952;box-shadow:0 0 36px #e9d4a623,inset 0 0 26px #d1bdae26;animation:lunaSpin 70s linear infinite reverse}
+.lunareth-middle-wheel{inset:66px;border-color:#d5bdd025;animation:lunaSpin 90s linear infinite}
+.lunareth-core{position:absolute;inset:123px;border:1px solid #e5dabf76;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;background:radial-gradient(circle at 45% 35%,#fff4d733,#bdb5e11c 60%,transparent 90%);box-shadow:0 0 26px #eee0b52c,inset 0 0 30px #eadab521}
+.lunareth-core>span{font:69px/1 var(--serif);color:#f2e5c5;text-shadow:0 0 27px #f2dbbb75;animation:lunaCoreGlow 7s ease-in-out infinite alternate}
+.lunareth-core small{font-size:7px;letter-spacing:.23em;color:#e7d7bd;margin-top:1px}
+.lunareth-orbit-node{--moon:#d9cfb5;position:absolute;top:50%;left:50%;width:41px;height:41px;border:1px solid color-mix(in srgb,var(--moon) 64%,transparent);border-radius:50%;background:linear-gradient(140deg,#23293d,#161d34);color:var(--moon);box-shadow:0 0 17px color-mix(in srgb,var(--moon) 24%,transparent),inset 0 0 15px color-mix(in srgb,var(--moon) 13%,transparent);transform:translate(-50%,-50%) rotate(var(--ang)) translateX(var(--r)) rotate(calc(-1 * var(--ang)));z-index:4;display:grid;place-items:center;transition:box-shadow .25s,border-color .25s,background .25s}
+.lunareth-orbit-node span{font:24px var(--serif);display:block;transition:transform .25s}
+.lunareth-orbit-node:hover,.lunareth-orbit-node:focus-visible{border-color:var(--moon);background:#303047;box-shadow:0 0 15px var(--moon),0 0 38px color-mix(in srgb,var(--moon) 45%,transparent);z-index:6}
+.lunareth-orbit-node:hover span{transform:scale(1.25)}
+.luna-petal{position:absolute;left:50%;top:50%;width:252px;height:85px;border:1px solid #e8dbbd3f;border-radius:50%;transform:translate(-50%,-50%) rotate(-34deg);pointer-events:none}
+.petal-b{transform:translate(-50%,-50%) rotate(36deg);border-color:#e8d6ba22}
+.lunareth-wheel-caption{position:absolute;bottom:4px;left:0;right:0;text-align:center;font-size:8px;letter-spacing:.22em;color:#a99db2}
+@keyframes lunaSpin{to{transform:rotate(360deg)}}
+@keyframes lunaCoreGlow{to{transform:scale(1.07);text-shadow:0 0 46px #f7daab}}
+.luna-stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px;margin:17px 0 43px}
+.luna-stats article{display:flex;align-items:center;gap:4px;flex-direction:column;justify-content:center;padding:18px 12px 17px;min-height:118px;border-radius:13px;background:linear-gradient(150deg,#27293d8f,#151a30e3);border:1px solid #d3c6b82c}
+.luna-stats article span{font-size:9px;letter-spacing:.16em;color:#bcb1b8}
+.luna-stats article strong{font:45px/1 var(--serif);color:#ebd7b4;margin:3px 0}
+.luna-stats article small{color:#9aa3b9;font-size:10px}
+.lunareth-section-head{margin-top:0}
+.lunareth-card-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:13px}
+.luna-folder{--moon:#ebd7b4;text-align:left;display:flex;flex-direction:column;gap:9px;border:1px solid color-mix(in srgb,var(--moon) 24%,transparent);border-radius:15px;padding:17px 16px 14px;min-height:176px;background:radial-gradient(circle at 80% 14%,color-mix(in srgb,var(--moon) 12%,transparent),transparent 60%),linear-gradient(135deg,#1f223cdb,#161b30ef);transition:transform .25s,border-color .25s,box-shadow .25s;min-width:0;position:relative;overflow:hidden;color:#f4f1f6;isolation:isolate}
+.luna-folder:before{content:'✧';position:absolute;right:36%;top:28%;font-size:11px;color:color-mix(in srgb,var(--moon) 45%,transparent)}
+.luna-folder:hover,.luna-folder.selected{transform:translateY(-5px);border-color:color-mix(in srgb,var(--moon) 65%,transparent);box-shadow:0 8px 28px #0005,0 0 24px color-mix(in srgb,var(--moon) 13%,transparent)}
+.luna-folder-top{display:flex;justify-content:space-between;align-items:center;gap:6px;margin-bottom:6px}
+.luna-folder-top small{font-size:9px;letter-spacing:.13em;color:#a7a6b9}
+.luna-mini-orb{color:var(--moon);font:31px/1 var(--serif);width:55px;height:55px;border:1px solid color-mix(in srgb,var(--moon) 28%,transparent);border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle,color-mix(in srgb,var(--moon) 13%,transparent),transparent 66%);box-shadow:0 0 21px color-mix(in srgb,var(--moon) 10%,transparent);transition:transform .4s}
+.luna-folder:hover .luna-mini-orb{transform:rotate(18deg) scale(1.08)}
+.luna-folder strong{font:27px/1.06 var(--serif);color:#f5f0f4}
+.luna-folder-title{font-size:10px;color:#a9acbe;line-height:1.5;flex:1}
+.luna-folder-foot{display:flex;gap:7px;align-items:center;font-size:9px;letter-spacing:.05em;color:var(--moon);border-top:1px solid color-mix(in srgb,var(--moon) 18%,transparent);padding-top:11px;margin-top:3px}
+.luna-folder-foot i{width:5px;height:5px;background:var(--moon);border-radius:50%;box-shadow:0 0 8px var(--moon)}
+.luna-folder-foot b{margin-left:auto;font-size:14px;font-weight:400}
+.lunareth-extra-folders{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px;margin-top:15px}
+.lunareth-extra-card{border:1px solid #c9c1df34;border-radius:13px;background:linear-gradient(120deg,#2a273d94,#151e34c9);padding:17px;min-width:0;display:flex;align-items:center;gap:13px;text-align:left;color:#f5f0f7;transition:.25s}
+.lunareth-extra-card:hover,.lunareth-extra-card.selected{transform:translateY(-3px);border-color:#e0cbac81;box-shadow:0 9px 29px #0004}
+.luna-extra-icon{width:46px;height:46px;flex:0 0 46px;border:1px solid #d8cdb344;border-radius:12px;display:grid;place-items:center;color:#e7d6b6;font:29px var(--serif);background:#f1d6a70b}
+.lunareth-extra-card span:nth-child(2){display:flex;flex-direction:column;gap:4px;min-width:0}
+.lunareth-extra-card small{color:#ccbcae;font-size:8px;letter-spacing:.13em}
+.lunareth-extra-card strong{font:20px/1.15 var(--serif);color:#f0e4de}
+.lunareth-extra-card em{font-style:normal;color:#929bb1;font-size:10px;line-height:1.45}
+.lunareth-extra-card b{font-weight:400;font-size:17px;color:#d7c4af;margin-left:auto;flex-shrink:0;align-self:start}
+.vigil-extra .luna-extra-icon{color:#c6c8ec}.observatory-extra .luna-extra-icon{color:#a8e1d9}
+.lunareth-welcome{text-align:center;margin:29px 0;border:1px solid #d5cbba3c;border-radius:19px;padding:38px 30px;background:radial-gradient(ellipse at 50% 0%,#ad9b7720,transparent 70%),linear-gradient(130deg,#181d35dd,#161c31d9)}
+.luna-welcome-ornament{font:30px var(--serif);color:#ddcfab;letter-spacing:.19em}
+.lunareth-welcome h3{font:38px var(--serif);margin:12px 0 6px}
+.lunareth-welcome p{max-width:580px;font-size:12px;line-height:1.9;color:#a6aabe;margin:0 auto 22px}
+.lunareth-start{font-size:12px;border:1px solid #e6d4b883;border-radius:40px;color:#f8e8c9;padding:12px 21px;background:#d3bb8e1c;transition:.2s}
+.lunareth-start:hover{box-shadow:0 0 30px #e4cd9650;transform:translateY(-2px)}
+.lunareth-start span{margin-left:9px}
+
+/* ═══ Páginas individuais ═══ */
+.luna-detail{--moon:#e8d7b5;scroll-margin-top:90px;margin-top:36px}
+.luna-panel-heading{padding:0 0 20px;border-bottom:1px solid #d5c3e338;margin-bottom:17px}
+.luna-section-serial{font-size:10px;letter-spacing:.22em;color:var(--moon)}
+.luna-panel-heading h2{font:400 clamp(44px,5vw,69px)/1.02 var(--serif);letter-spacing:-.025em;margin:9px 0 7px}
+.luna-panel-heading h2 em{font-weight:400;color:#e7d1b1}
+.luna-panel-heading p{color:#a8a6c0;font-size:13px;line-height:1.6}
+.luna-prose-panel{max-width:none;position:relative;border:1px solid #d8c5ab36;border-radius:17px;padding:36px 42px;background:radial-gradient(ellipse at 85% 12%,#a38d8323,transparent 49%),linear-gradient(145deg,#202139e8,#121e31df)}
+.luna-prose-star{position:absolute;top:24px;right:30px;font-size:35px;color:#d7bd9c55}
+.luna-prose-panel h3{font:40px var(--serif);color:#f2e5d2;margin:0 0 17px}
+.luna-prose-panel p{font-size:14px;line-height:2;color:#bdc0d0;max-width:910px;margin:0 0 17px}
+.luna-prose-panel p:last-child{margin-bottom:0}
+.luna-prose-panel strong{color:#e9d5b4;font-weight:600}
+.luna-origin-triptych{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px;margin-top:14px}
+.luna-origin-triptych article{background:#1a1f35bb;border:1px solid #d5c5c034;border-radius:14px;padding:25px}
+.luna-origin-triptych span{font-size:9px;letter-spacing:.14em;color:#d5be9b}
+.luna-origin-triptych strong{display:block;font:32px var(--serif);margin:9px 0 3px}
+.luna-origin-triptych p{font-size:12px;line-height:1.75;color:#a6abbe}
+.luna-moral{display:flex;align-items:center;gap:25px;background:linear-gradient(130deg,#22213cbb,#141f33);border:1px solid #c1bddb44;border-radius:15px;padding:28px;margin-top:14px}
+.moral-symbol{font:90px/1 var(--serif);color:#e3d1b3;text-shadow:0 0 37px #c9ad9166}
+.luna-moral span{font-size:9px;letter-spacing:.19em;color:#c6baa8}
+.luna-moral h3{font:30px var(--serif);margin:5px 0}
+.luna-moral p{font-size:12px;color:#adb4c5;line-height:1.8;margin:0 0 14px}
+.luna-moral button{padding:10px 0;color:#e1c9a9;font-size:12px;border-bottom:1px solid #e5d1ad70}
+.luna-moon-hero{display:grid;grid-template-columns:minmax(0,1fr) 340px;min-height:340px;border:1px solid color-mix(in srgb,var(--moon) 35%,transparent);background:radial-gradient(circle at 80% 49%,color-mix(in srgb,var(--moon) 21%,transparent),transparent 45%),linear-gradient(135deg,#20223c,#101b31);border-radius:19px;overflow:hidden;position:relative}
+.luna-moon-hero:after{content:'';position:absolute;inset:0;pointer-events:none;background-image:radial-gradient(#f8f4e787 .75px,transparent 1.3px);background-size:61px 67px;opacity:.27}
+.luna-hero-text{padding:39px 25px 36px 40px;position:relative;z-index:1;align-self:center}
+.luna-hero-label{font-size:9px;letter-spacing:.2em;color:var(--moon)}
+.luna-hero-text h3{font:45px/1.04 var(--serif);margin:16px 0 10px;color:#f3f0f8}
+.luna-hero-text blockquote{font:italic 25px/1.35 var(--serif);margin:0 0 17px;color:color-mix(in srgb,var(--moon) 70%,white 30%)}
+.luna-hero-text p{font-size:13px;line-height:1.85;color:#b6bed0;max-width:650px;margin:0}
+.luna-hero-art{position:relative;display:grid;place-items:center;z-index:1;min-height:290px}
+.luna-hero-orbit{position:absolute;width:250px;height:250px;border-radius:50%;border:1px solid color-mix(in srgb,var(--moon) 52%,transparent);box-shadow:0 0 0 33px color-mix(in srgb,var(--moon) 6%,transparent),0 0 0 74px color-mix(in srgb,var(--moon) 3%,transparent),inset 0 0 40px color-mix(in srgb,var(--moon) 10%,transparent);animation:lunaSpin 90s linear infinite}
+.luna-hero-orbit.inner{width:175px;height:175px;border-style:dashed;border-color:color-mix(in srgb,var(--moon) 35%,transparent);box-shadow:none;animation-duration:70s;animation-direction:reverse}
+.luna-icon-main{font:164px/1 var(--serif);color:color-mix(in srgb,var(--moon) 85%,white 15%);text-shadow:0 0 39px color-mix(in srgb,var(--moon) 55%,transparent);animation:lunaBreathe 6s ease-in-out infinite alternate}
+.luna-hero-glimmer{position:absolute;color:var(--moon);text-shadow:0 0 12px var(--moon);animation:lunaBreathe 5s infinite alternate}
+.glimmer-one{top:25%;left:15%}.glimmer-two{bottom:25%;right:15%;font-size:18px;animation-delay:-3s}
+.luna-hero-art>span{position:absolute;bottom:16px;letter-spacing:.24em;font-size:9px;color:color-mix(in srgb,var(--moon) 75%,white 25%)}
+.luna-moon-traits{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px;margin:14px 0}
+.luna-moon-traits article{padding:22px 25px;border:1px solid #c6c5da2f;border-radius:13px;position:relative;background:linear-gradient(145deg,#222338bd,#151e33e8);min-height:114px}
+.luna-moon-traits span{display:block;font-size:9px;letter-spacing:.17em;color:#a6aabc;margin-bottom:16px}
+.luna-moon-traits strong{display:block;padding-right:25px;font:23px/1.15 var(--serif);color:#f3eef8}
+.luna-moon-traits b{position:absolute;right:19px;bottom:17px;color:var(--moon);font:23px var(--serif)}
+.luna-color-gem{height:16px;width:16px;border:1px solid #fff6;border-radius:50%;background:var(--moon);box-shadow:0 0 17px color-mix(in srgb,var(--moon) 70%,transparent)}
+.luna-dual-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px}
+.luna-ritual,.luna-customs{border:1px solid color-mix(in srgb,var(--moon) 24%,transparent);border-radius:16px;background:linear-gradient(135deg,color-mix(in srgb,var(--moon) 10%,#1b2138),#131a2bde);padding:32px;min-width:0}
+.luna-block-kicker{display:flex;align-items:center;gap:10px;font-size:10px;letter-spacing:.15em;color:var(--moon);margin-bottom:18px}
+.luna-block-kicker span{font-size:23px}
+.luna-ritual h3{font:39px/1.12 var(--serif);color:#fff3ee;margin:0 0 16px}
+.luna-ritual p,.luna-custom p{font-size:13px;line-height:1.9;color:#b0b7cb;margin:0}
+.luna-ritual-end{margin-top:35px;padding-top:15px;border-top:1px solid #cbc4d82d;font-size:9px;letter-spacing:.15em;color:var(--moon)}
+.luna-custom{display:flex;gap:15px;margin:0;padding:12px 0 21px;border-bottom:1px solid #c2bfd52a}
+.luna-custom:last-child{padding-bottom:0;border-bottom:0}
+.custom-number{font:30px var(--serif);flex:0 0 40px;color:var(--moon);opacity:.75}
+.luna-custom h4{font:24px/1.2 var(--serif);margin:0 0 7px}
+.luna-detail-end{margin-top:16px;border:1px solid #d8ced733;background:#1d2037b5;border-radius:12px;padding:22px 25px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.luna-detail-end small{font-size:9px;letter-spacing:.15em;color:var(--moon)}
+.luna-detail-end p{font:italic 23px var(--serif);color:#e6e1ec;margin:5px 0 0}
+.luna-next-prev{display:flex;gap:9px;flex-wrap:wrap;justify-content:end}
+.luna-next-prev button{border:1px solid color-mix(in srgb,var(--moon) 46%,transparent);border-radius:9px;padding:11px 15px;color:#f0e8e7;background:#292b4599;font-size:11px;white-space:nowrap;transition:.2s}
+.luna-next-prev button:hover{background:#41405c}
+
+/* ═══ Vigília Celeste ═══ */
+.luna-vigil-scene{display:grid;grid-template-columns:330px 1fr;min-height:346px;background:radial-gradient(circle at 22% 50%,#c8cbdf16,transparent 45%),linear-gradient(120deg,#0a1425,#1a1b32);border:1px solid #c6cde44c;border-radius:18px;overflow:hidden}
+.vigil-art{min-height:310px;position:relative;display:grid;place-items:center}
+.vigil-art:before,.vigil-art:after{content:'';position:absolute;inset:38px;border:1px solid #b6bfd54f;border-radius:50%;box-shadow:0 0 0 20px #b6bfd509,0 0 0 47px #b6bfd505}
+.vigil-art:after{inset:82px;border-style:dashed;box-shadow:none;animation:lunaSpin 100s linear infinite}
+.vigil-rune{font:139px/1 var(--serif);color:#cdd1ec;text-shadow:0 0 46px #a4b4ed9c;animation:lunaBreathe 7s ease-in-out infinite alternate}
+.vigil-halo{position:absolute;inset:50px;background:radial-gradient(circle,#c8dcff11,transparent 70%);border-radius:50%}
+.vigil-art>span{position:absolute;top:16%;left:22%;color:#d9d9ff}.vigil-art>i{position:absolute;bottom:15%;right:23%;color:#e6d6cd;font-style:normal}
+.vigil-story{align-self:center;padding:40px 40px 42px 20px}
+.vigil-story>span{font-size:10px;letter-spacing:.18em;color:#b9bde0}
+.vigil-story h3{font:43px var(--serif);margin:10px 0 12px;color:#eeedf7}
+.vigil-story p{font-size:13px;line-height:1.9;color:#adb7ca;margin-bottom:13px}
+.vigil-story strong{color:#e0dfef;font-weight:600}
+.vigil-silence{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:14px}
+.vigil-silence>div{border:1px solid #c7c7e23a;border-radius:13px;padding:23px 18px;background:linear-gradient(135deg,#1f223a,#141a2d);min-width:0}
+.vigil-silence span{font:28px var(--serif);color:#c2c9e5}
+.vigil-silence strong{display:block;font:24px/1.1 var(--serif);margin:12px 0;color:#e3e5f2}
+.vigil-silence p{font-size:11px;line-height:1.8;color:#a2aabe}
+.vigil-closing{margin-top:15px;border:1px solid #c5cce53d;background:radial-gradient(ellipse at center,#959bc51a,transparent 65%),#131a2d;border-radius:16px;text-align:center;padding:37px 25px 33px}
+.vigil-closing span{font:29px var(--serif);color:#cdd5ed}
+.vigil-closing p{font:italic 28px/1.35 var(--serif);max-width:680px;margin:10px auto;color:#ebe5f2}
+.vigil-closing small{font-size:9px;letter-spacing:.18em;color:#aeb7cf}
+
+/* ═══ Observatório Lunareth ═══ */
+.luna-calc{border:1px solid #d9d0c43d;border-radius:17px;overflow:hidden;background:linear-gradient(140deg,#1e243a,#121a2f);padding:32px}
+.luna-calc-head{display:flex;justify-content:space-between;align-items:center;gap:15px;margin-bottom:26px}
+.luna-calc-head h3{font:44px/1.1 var(--serif);margin:8px 0}
+.luna-calc-head p{font-size:12px;color:#a4afc3;margin:0}
+.luna-calc-mark{font:60px var(--serif);color:#e3d5bd;text-shadow:0 0 27px #e3d8bf61}
+.luna-calc-form{display:flex;align-items:end;gap:14px;flex-wrap:wrap}
+.luna-calc-form label{display:flex;flex-direction:column;gap:8px;min-width:145px;flex:1;max-width:270px;font-size:10px;letter-spacing:.12em;color:#d5cabb}
+.luna-calc-form input{width:100%;min-height:48px;background:#0d1429;border:1px solid #d4cfdd4c;border-radius:9px;color:#f4eaf0;font:23px var(--serif);padding:9px 13px;outline:0}
+.luna-calc-form input:focus{border-color:#ead1a9;box-shadow:0 0 0 3px #f9deaf17}
+.luna-calc-buttons{display:flex;gap:7px}
+.luna-calc-buttons button{width:49px;height:49px;border:1px solid #c8bfa761;border-radius:10px;background:#27283f;color:#f3e3c8;font-size:22px;transition:.2s}
+.luna-calc-buttons button:hover{background:#3f3950}
+.luna-day-slider-wrap{margin:24px 0}
+#lunarethSlider{width:100%;height:5px;border-radius:10px;appearance:none;-webkit-appearance:none;background:linear-gradient(90deg,#e2ccaa var(--filled,0%),#4b5169 var(--filled,0%));outline:none;cursor:pointer}
+#lunarethSlider::-webkit-slider-thumb{appearance:none;-webkit-appearance:none;background:#efd9b6;width:17px;height:17px;border-radius:50%;border:3px solid #17213a;box-shadow:0 0 0 1px #f5ddbe,0 0 18px #f7e1b896}
+#lunarethSlider::-moz-range-thumb{background:#efd9b6;width:14px;height:14px;border-radius:50%;border:2px solid #17213a;box-shadow:0 0 10px #f7e1b896}
+.luna-slider-labels{display:flex;justify-content:space-between;margin-top:10px;font-size:9px;letter-spacing:.1em;color:#8e97ad}
+.luna-calc-result{--moon:#b9e4a8;display:flex;align-items:center;gap:22px;padding:22px;border:1px solid color-mix(in srgb,var(--moon) 36%,transparent);border-radius:13px;background:radial-gradient(circle at 8% 50%,color-mix(in srgb,var(--moon) 17%,transparent),transparent 42%),#141c32;min-width:0}
+.luna-result-orb{width:89px;height:89px;flex:0 0 89px;border-radius:50%;border:1px solid color-mix(in srgb,var(--moon) 60%,transparent);box-shadow:0 0 31px color-mix(in srgb,var(--moon) 23%,transparent),inset 0 0 35px color-mix(in srgb,var(--moon) 15%,transparent);display:grid;place-items:center;color:var(--moon);font:50px var(--serif)}
+.luna-result-copy{flex:1;min-width:0}
+.luna-result-copy>span{display:block;font-size:9px;letter-spacing:.15em;color:var(--moon)}
+.luna-result-copy h4{font:36px/1.1 var(--serif);margin:5px 0 1px}
+.luna-result-copy p{font-size:12px;color:#c5c6d6;margin:0}
+.luna-result-copy small{font-size:10px;color:#a2a9bb}
+.luna-calc-result button{border:1px solid color-mix(in srgb,var(--moon) 50%,transparent);padding:12px 17px;border-radius:8px;color:#f0f0fa;background:#3a3b5099;white-space:nowrap;font-size:11px;transition:.2s}
+.luna-calc-result button:hover{background:#555268}
+.luna-month-track{display:grid;grid-template-columns:repeat(10,minmax(0,1fr));gap:5px;margin-top:23px}
+.luna-track-cell{--moon:#dec3a4;min-width:0;padding:13px 3px 10px;display:flex;flex-direction:column;align-items:center;gap:7px;border-radius:10px;border:1px solid color-mix(in srgb,var(--moon) 23%,transparent);background:color-mix(in srgb,var(--moon) 8%,#11182c);color:#d8d9e7;transition:.2s}
+.luna-track-cell:hover,.luna-track-cell.current{border-color:var(--moon);box-shadow:inset 0 0 22px color-mix(in srgb,var(--moon) 13%,transparent)}
+.luna-track-cell span{font-size:8px;color:#aeb1c4}.luna-track-cell strong{font:27px var(--serif);color:var(--moon)}.luna-track-cell small{font-size:9px;white-space:nowrap;color:#b6bbc9}
+.luna-calc-footnote{font-size:11px;color:#93a0b6;line-height:1.75;border-top:1px solid #d2ccdf24;padding-top:18px;margin:18px 0 0}
+.lunareth-footer{margin-top:55px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;border-top:1px solid #cfc5d52b;padding-top:20px;color:#9299b0;font-size:9px;letter-spacing:.15em}
+/* Responsividade */
+@media(max-width:1250px){.lunareth-cover{grid-template-columns:minmax(0,1fr) 340px}.lunareth-cover-copy{padding-left:34px}.lunareth-astrarium{width:310px;height:310px;--r:125px}.lunareth-core{inset:107px}.lunareth-cover-bottom{left:34px}.lunareth-card-grid{grid-template-columns:repeat(5,minmax(0,1fr))}.luna-folder{padding:13px}.luna-folder strong{font-size:24px}.luna-mini-orb{width:44px;height:44px}}
+@media(max-width:1000px){.lunareth-cover{grid-template-columns:minmax(0,1fr) 275px;min-height:380px}.lunareth-astrarium{width:260px;height:260px;--r:105px}.lunareth-core{inset:92px}.lunareth-core>span{font-size:47px}.lunareth-core small{display:none}.lunareth-cover h1{font-size:66px}.lunareth-card-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.lunareth-extra-folders{grid-template-columns:1fr 1fr}.luna-moon-hero{grid-template-columns:minmax(0,1fr) 250px}.luna-hero-orbit{width:205px;height:205px}.luna-hero-orbit.inner{width:145px;height:145px}.luna-icon-main{font-size:120px}.luna-hero-text{padding:28px}.luna-hero-text h3{font-size:37px}.luna-vigil-scene{grid-template-columns:240px 1fr}.vigil-story{padding:25px 25px 25px 8px}.vigil-silence{grid-template-columns:repeat(2,minmax(0,1fr))}.luna-month-track{grid-template-columns:repeat(5,minmax(0,1fr))}}
+@media(max-width:700px){.lunareth-cover{display:flex;flex-direction:column;gap:0;min-height:0}.lunareth-cover-copy{width:100%;padding:27px 24px 0}.lunareth-cover h1{font-size:64px}.luna-overline{margin:21px 0 12px}.luna-cover-quote{font-size:23px}.luna-cover-desc{font-size:12px}.lunareth-astrarium{width:285px;height:285px;--r:117px;margin:4px auto 45px}.lunareth-core{inset:98px}.lunareth-cover-bottom{left:24px;right:24px;bottom:15px}.luna-stats{grid-template-columns:1fr 1fr;gap:8px;margin-bottom:30px}.luna-stats article{min-height:97px}.luna-stats article strong{font-size:37px}.lunareth-card-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.luna-folder{min-height:170px;padding:13px}.luna-folder strong{font-size:25px}.lunareth-extra-folders{grid-template-columns:1fr}.luna-detail{scroll-margin-top:72px}.luna-panel-heading h2{font-size:47px}.luna-prose-panel{padding:25px 21px}.luna-prose-panel h3{font-size:34px}.luna-prose-panel p{font-size:13px}.luna-origin-triptych{grid-template-columns:1fr}.luna-moon-hero{display:flex;flex-direction:column}.luna-hero-text{padding:26px 22px 0}.luna-hero-text h3{font-size:41px}.luna-hero-art{min-height:250px}.luna-moon-traits{grid-template-columns:1fr}.luna-moon-traits article{min-height:82px;padding:17px}.luna-moon-traits span{margin-bottom:9px}.luna-dual-layout{grid-template-columns:1fr}.luna-ritual,.luna-customs{padding:24px 21px}.luna-ritual h3{font-size:34px}.luna-detail-end{flex-direction:column;align-items:start;padding:21px}.luna-next-prev{justify-content:start}.luna-vigil-scene{display:flex;flex-direction:column}.vigil-art{min-height:215px}.vigil-art:before{inset:20px auto;width:186px;height:186px}.vigil-art:after{inset:50px auto;width:125px;height:125px}.vigil-rune{font-size:110px}.vigil-story{padding:15px 23px 30px}.vigil-story h3{font-size:38px}.vigil-silence{grid-template-columns:1fr 1fr;gap:8px}.vigil-silence>div{padding:17px 12px}.vigil-silence strong{font-size:20px}.luna-calc{padding:22px 16px}.luna-calc-head h3{font-size:36px}.luna-calc-form label{min-width:calc(50% - 15px)}.luna-calc-result{gap:13px;flex-wrap:wrap;padding:17px}.luna-result-orb{width:67px;height:67px;flex-basis:67px;font-size:40px}.luna-result-copy h4{font-size:30px}.luna-calc-result button{width:100%}.luna-track-cell small{font-size:8px}}
+@media(max-width:420px){.lunareth-cover h1{font-size:54px}.lunareth-cover-copy{padding-left:16px;padding-right:16px}.lunareth-astrarium{width:245px;height:245px;--r:98px}.lunareth-core{inset:85px}.lunareth-orbit-node{width:35px;height:35px}.lunareth-orbit-node span{font-size:20px}.lunareth-cover-bottom{left:16px;right:16px;font-size:7px}.luna-folder strong{font-size:22px}.luna-folder-top small{font-size:8px}.luna-folder-title{font-size:9px}.luna-mini-orb{width:42px;height:42px}.luna-welcome-ornament{font-size:24px}.lunareth-welcome h3{font-size:31px}.luna-detail-end .luna-next-prev button{font-size:10px;padding:10px 12px}.luna-vigil-scene{min-height:0}}
+
+/* Símbolos ilustrados em SVG vetorial — um por lua */
+.luna-rune-svg{width:100%;height:100%;display:block;stroke:currentColor;overflow:visible;filter:drop-shadow(0 0 11px color-mix(in srgb,var(--moon) 33%,transparent))}
+.lunareth-orbit-node .luna-rune-svg{width:26px;height:26px}
+.luna-mini-orb .luna-rune-svg{width:36px;height:36px}
+.luna-icon-main{display:grid;place-items:center;width:148px;height:148px}
+.luna-icon-main .luna-rune-svg{width:139px;height:139px}
+@media(max-width:600px){.luna-icon-main{width:126px;height:126px}.luna-icon-main .luna-rune-svg{width:120px;height:120px}}
+@media(max-width:420px){.lunareth-orbit-node .luna-rune-svg{width:22px;height:22px}.luna-mini-orb .luna-rune-svg{width:32px;height:32px}}
+.luna-detail{scroll-margin-top:127px}
+@media(max-width:700px){.luna-detail{scroll-margin-top:106px}}
+/* A cor do emblema acompanha o símbolo descrito no códice. */
+.luna-folder[data-folder="alun-vaeris"] .luna-rune-svg,
+#folder-alun-vaeris .luna-icon-main .luna-rune-svg{color:#f0d494}
+.luna-folder[data-folder="aquareth"] .luna-rune-svg,
+#folder-aquareth .luna-icon-main .luna-rune-svg{color:#e3eafa}
+.luna-folder[data-folder="ignoria"] .luna-rune-svg,
+#folder-ignoria .luna-icon-main .luna-rune-svg{color:#fff4e9}

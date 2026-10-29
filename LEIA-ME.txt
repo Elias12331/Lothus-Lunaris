@@ -1,0 +1,147 @@
+FAMÍLIA LUNARIS — EDIÇÃO CELESTIAL · LUNARETH & AS CINCO CASAS
+============================================
+
+COMO ABRIR
+1. Extraia o ZIP inteiro, mantendo todos os arquivos na mesma pasta.
+2. Abra index.html em Chrome, Edge ou Firefox.
+3. O Salão Celestial abre diretamente, sem login ou hospedagem.
+
+A EDIÇÃO CONTÉM
+• Salão Celestial com anéis orbitais, estrelas, nebulosas e animações.
+• Astraelis, Ovelha, Sirius e Lyra & Noctis com brasões personalizados.
+• Astraelis: "O Livro de Astrael Belos", com 15 capítulos completos.
+• Ovelha > Obsessão: "Crônicas de Ra’siel", com 8 capítulos completos.
+• Campos editáveis de história e anotações.
+• Biblioteca Aelari com glifos, símbolos, pontuação, regras, vocabulário,
+  escrita cerimonial, símbolo sagrado e tradutor nos dois sentidos.
+
+NOVO: LUNARETH — O CALENDÁRIO SAGRADO DE ELARIN
+• Nova pasta de acesso direto no Salão Celestial e no menu lateral.
+• Capa celestial com roda ilustrada das dez luas: toque em qualquer lua.
+• Dez páginas individuais, com símbolos vetoriais, cores, virtudes,
+  ritos e costumes próprios.
+• Introdução: a origem do calendário e o significado das dez jornadas.
+• Vigília Celeste: a noite de silêncio fora do calendário, a cada década.
+• Observatório do Tempo: selecione o ano e o dia para consultar a lua;
+  em anos múltiplos de dez, o dia 361 é a Vigília Celeste.
+• É um calendário FICTÍCIO. O observatório não presume equivalência com
+  o calendário gregoriano ou com o dia de hoje.
+
+NOVO: AS GRANDES CELEBRAÇÕES DE ELARIN
+• Lunareth > Festas & Costumes: índice interativo das 10 celebrações.
+• Cada lua também possui sua festa completa, com tradições,
+  rituais, comidas típicas e costumes, conforme o texto fornecido.
+• Os botões “Explorar celebração” abrem a página da lua e levam
+  diretamente à descrição do festival correspondente.
+• A Vigília Celeste conserva sua natureza de noite silenciosa,
+  sem festas, música ou trabalhos.
+
+NOVO: AS CINCO GRANDES CASAS DE ELARIN
+• Nova biblioteca no Salão Celestial e no menu lateral.
+• Brasões vetoriais personalizados para Vaelorn, Lunaris, Aerith,
+  Ignovar e Astraelis, com suas cores sagradas.
+• Cada Casa possui história, símbolo, lua sagrada, virtude, cor,
+  animal sagrado e costumes próprios.
+• Botão para consultar diretamente a lua sagrada da Casa.
+• O Conselho das Cinco Lanternas permite acender e apagar as cinco
+  luzes, mostrando quando todas estão acesas.
+
+SALVAMENTO E CÓPIAS
+• Histórias e anotações são salvas no armazenamento local do navegador.
+• Botões ⇩ e ⇧, no topo, exportam e importam seus registros em JSON.
+• A visualização do calendário guarda somente ano e dia selecionados
+  no mesmo navegador. Não usa banco de dados nem serviços externos.
+• Faça cópias antes de apagar dados do navegador.
+
+ARQUIVOS
+index.html          Todas as páginas, pastas e conteúdos
+style.css           Estilos gerais e animações
+lunareth.css        Identidade visual do Calendário Lunareth
+casas-festivais.css Novos estilos das Festas e Cinco Casas
+script.js           Navegação, notas, leitores e tradutor
+lunareth.js         Cálculo e interatividade do Calendário Vivo
+casas-festivais.js  Interação das lanternas, acesso às festividades
+lore-rasiel.js      História completa de Ra’siel embutida
+lore-astrael.js     História completa de Astrael Belos embutida
+rasiel.txt          Cópia legível da lore de Ra’siel
+astrael.txt         Cópia legível da lore de Astrael Belos
+festivais-elarin.txt Cópia do material original das celebrações
+LEIA-ME.txt         Estas instruções
+
+As fontes ornamentais tentam carregar do Google Fonts, com substitutos
+locais quando não há internet. O conteúdo do site funciona offline.
+Sem login, qualquer pessoa que receba o site pode acessar suas páginas.
+
+
+ATUALIZAÇÃO VISUAL — ESTRELAS FLUTUANTES
+As capas dos perfis, Aelari, Lunareth e Cinco Casas agora mostram estrelinhas luminosas que flutuam suavemente, sem rabiscos ou linhas conectando estrelas.
+Arquivos adicionais: estrelas-flutuantes.css e estrelas-flutuantes.js. Devem permanecer junto aos outros arquivos.
+O botão Reduzir animações também desativa o movimento dessas estrelas.
+
+ATUALIZAÇÃO — ESTRELAS EM PROFUNDIDADE
+As capas agora têm três camadas discretas de estrelas flutuantes, distribuídas
+por toda a área: astros distantes, intermediários e alguns mais próximos.
+O movimento do mouse cria um parallax suave nas capas, sem afetar os textos.
+A opção “Reduzir animações” também desliga este efeito.
+
+
+MAPAS INTERATIVOS (ATUALIZAÇÃO)
+────────────────────────────────────────
+No Salão Celestial, clique nos cinco astros em órbita para abrir os respectivos perfis (Astraelis, Ovelha, Sirius, Lyra & Noctis e Língua Aelari). Clique na estrela central para descer até as constelações da família.
+Na página As Cinco Grandes Casas, clique em cada um dos cinco símbolos coloridos para abrir a Casa correspondente. O símbolo central abre o Conselho das Cinco Lanternas.
+Use TAB e ENTER para navegar por teclado; o mapa pausa o movimento ao passar o mouse sobre a área de escolha para facilitar os cliques.
+As órbitas e estrelas flutuantes permanecem como na versão anterior.
+
+
+===========================================================
+NOVO: PLANETÁRIO CELESTIAL E CÉU VIVO
+===========================================================
+Acesse a aba "Planetário Celestial" pelo menu lateral ou pelo
+cartão do Planetário no Salão Celestial.
+
+- O céu contém 10 astros simbólicos, correspondentes às dez luas
+  do calendário Lunareth. Esta é uma interpretação visual do mundo
+  ficcional de Elarin, não uma carta astronômica real.
+- Clique em um astro ou em uma das dez cartas para selecioná-lo.
+- Arraste o céu com o mouse ou com o dedo para mudar o enquadramento.
+- Use a roda do mouse ou os botões + / − para ampliar/reduzir.
+- Pause/retome os movimentos e mude a velocidade (0,5× a 4×).
+- Ative/desative as trilhas orbitais e centralize o céu.
+- Escolha um dia de 1 a 360 para descobrir a lua correspondente.
+- Abra o Lunareth diretamente na pasta da lua selecionada.
+- Estrelas do fundo ganharam cintilação e movimento 3D leve.
+- O botão "Reduzir animações" também respeita o planetário.
+
+Tudo está incluído no ZIP; funciona offline ao abrir index.html.
+O navegador pode tentar buscar as fontes Google (opcionais);
+na ausência de conexão, as fontes alternativas são usadas.
+
+
+NOVO: PLANETÁRIO DOS OITO MUNDOS
+------------------------------------
+O Planetário fica no Salão Celestial e no menu lateral. Ele é dedicado aos oito PLANETAS fictícios do sistema de Aurelis: Vesperion, Aqualis, Vaeloria, Caelith, Ignathor, Auróvion, Nivareth e Nocthara. As dez luas do Lunareth permanecem exclusivamente no Calendário Sagrado.
+
+No observatório: clique nos planetas, arraste o mapa, use o zoom e os controles de pausa, órbitas e velocidade. Selecione qualquer planeta no catálogo e clique em “Ler a história deste mundo”. As histórias, cores, texturas e características estão implementadas em planetario.js; os estilos em planetario.css.
+
+O céu geral e as capas contêm estrelas de diferentes profundidades que flutuam e piscam ocasionalmente. Para reduzir o movimento, use “Reduzir animações” no menu.
+
+Este planetário é uma cosmologia ARTÍSTICA E FICCIONAL. Não representa posições científicas reais. Não necessita conexão com internet para suas interações.
+
+
+NOVO · CÓDICE DOS OITO MUNDOS — EDIÇÃO DECORADA
+- As Crônicas agora exibem um astrolábio com a imagem do planeta selecionado.
+- A moldura, a cor do manuscrito, a órbita, o fenômeno e o selo mudam a cada planeta.
+- A Lenda da Primeira Luz ganhou uma ilustração de Aurelis e seus oito mundos,
+  além de uma apresentação em estilo de manuscrito antigo.
+- Tudo funciona offline, inclusive as animações decorativas (sujeitas à opção
+  de reduzir movimento do navegador ou do site).
+
+ATUALIZAÇÃO — CÉU VIVO
+- Estrelas do fundo geral piscam em instantes diferentes, com halos suaves.
+- Estrelas deslizam lentamente em direções variadas; algumas cintilam por instantes.
+- Movimento de paralaxe discreto com o ponteiro (não altera o conteúdo).
+- Para interromper os efeitos, use a opção de reduzir animações no menu.
+
+
+COSMOS VIVO v3 — estrelas do fundo cintilam a cada poucos segundos e se movem lentamente.
+Para ver o efeito, deixe “Reduzir animações” DESL. no menu. Extraia este ZIP em uma pasta NOVA (não sobreponha a versão antiga).

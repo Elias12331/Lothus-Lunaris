@@ -1,0 +1,108 @@
+/* ════════════════════════════════════════════════════════════════
+   MAPAS INTERATIVOS · Família Lunaris
+   Mesmo visual celestial, agora com navegação pelos símbolos.
+   ════════════════════════════════════════════════════════════════ */
+
+/* Home: cada símbolo mantém a órbita, mas agora recebe cliques e foco. */
+.orrery .orbiter{pointer-events:none}
+.orrery .orbit-star{
+  pointer-events:auto;
+  position:absolute;
+  z-index:5;
+  display:grid;
+  place-items:center;
+  padding:0;
+  line-height:1;
+  font-family:var(--serif),Georgia,serif;
+  user-select:none;
+  -webkit-tap-highlight-color:transparent;
+  cursor:pointer;
+  box-shadow:0 0 19px #9e89d944;
+  transition:border-color .25s,box-shadow .25s,filter .25s,background-color .25s;
+}
+.orrery .orbit-star:hover,
+.orrery .orbit-star:focus-visible{
+  filter:brightness(1.5) drop-shadow(0 0 9px currentColor);
+  border-color:currentColor;
+  background:#29233ee0;
+  box-shadow:0 0 18px color-mix(in srgb,currentColor 50%,transparent),0 0 35px color-mix(in srgb,currentColor 20%,transparent),inset 0 0 12px #ffffff1a;
+  z-index:10;
+}
+/* Ao entrar no mapa, as órbitas param só durante a escolha do astro.
+   Ao sair, voltam a girar; evita que o alvo fuja do cursor. */
+@media(hover:hover){.orrery:hover .orbiter,.orrery:hover .orbit-star,.orrery:hover .orbit-center-link{animation-play-state:paused}}
+.orrery:focus-within .orbiter,.orrery:focus-within .orbit-star,.orrery:focus-within .orbit-center-link{animation-play-state:paused}
+.orrery .orbiter:has(.orbit-star:hover),
+.orrery .orbiter:has(.orbit-star:focus-visible){animation-play-state:paused}
+.orrery .orbit-star:focus-visible,
+.orrery .orbit-center-link:focus-visible{
+  outline:2px solid #e7d7b6;
+  outline-offset:6px;
+}
+.orrery .orbit-center-link{
+  pointer-events:auto;
+  z-index:4;
+  color:inherit;
+  cursor:pointer;
+  transition:filter .25s,border-color .25s,box-shadow .25s;
+  -webkit-tap-highlight-color:transparent;
+  padding:0;
+}
+.orrery .orbit-center-link:hover,
+.orrery .orbit-center-link:focus-visible{filter:brightness(1.25) drop-shadow(0 0 12px #e8c994);}
+.orrery-frame .orrery-caption{z-index:3;pointer-events:none}
+
+/* Casas: cinco símbolos clicáveis e o emblema central para o Conselho. */
+.houses-cover-art .houses-art-satellite{
+  display:grid;
+  place-items:center;
+  width:45px;
+  height:45px;
+  padding:0;
+  border:1px solid transparent;
+  border-radius:50%;
+  background:transparent;
+  font-family:var(--serif),Georgia,serif;
+  cursor:pointer;
+  pointer-events:auto;
+  user-select:none;
+  transition:background-color .25s,border-color .25s,box-shadow .25s,filter .25s,transform .25s;
+  -webkit-tap-highlight-color:transparent;
+}
+.houses-cover-art .houses-art-satellite:hover,
+.houses-cover-art .houses-art-satellite:focus-visible{
+  transform:scale(1.2);
+  background:color-mix(in srgb,currentColor 9%,#131929);
+  border-color:color-mix(in srgb,currentColor 40%,transparent);
+  box-shadow:0 0 24px color-mix(in srgb,currentColor 27%,transparent),inset 0 0 18px #ffffff10;
+  filter:brightness(1.38);
+}
+.houses-cover-art .houses-art-center-link{
+  position:relative;
+  z-index:2;
+  padding:0;
+  font-family:var(--serif),Georgia,serif;
+  cursor:pointer;
+  pointer-events:auto;
+  transition:transform .3s,box-shadow .3s,border-color .3s,filter .3s;
+  -webkit-tap-highlight-color:transparent;
+}
+.houses-cover-art .houses-art-center-link:hover,
+.houses-cover-art .houses-art-center-link:focus-visible{
+  transform:scale(1.07);
+  filter:brightness(1.2);
+  border-color:#eddbb2;
+  box-shadow:0 0 35px #e7caa64c,inset 0 0 28px #f7e4c01a;
+}
+.houses-cover-art button:focus-visible{
+  outline:2px solid #efdfbf;
+  outline-offset:4px;
+}
+.houses-cover-art:hover,.houses-cover-art:focus-within{animation-play-state:paused}
+
+@media(max-width:600px){
+  /* Área de toque maior sem modificar o desenho original. */
+  .orrery .orbit-star{min-width:36px;min-height:36px}
+  .orrery .planet-e{min-width:32px;min-height:32px}
+  .houses-cover-art .houses-art-satellite{width:43px;height:43px}
+}

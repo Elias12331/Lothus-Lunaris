@@ -1,0 +1,189 @@
+/* ═══ ARQUIVOS DE ELARIN · FESTAS & CASAS ═══
+   Complemento visual isolado: mantém os outros volumes sem alterações. */
+.lunareth-extra-folders{grid-template-columns:repeat(2,minmax(0,1fr))}
+.festival-extra{border-color:#e9cca64a;background:radial-gradient(circle at 12% 40%,#e9c7951d,transparent 65%),linear-gradient(120deg,#302a3e,#161b30);min-height:95px}
+.festival-extra .luna-extra-icon{color:#f5d8a0;box-shadow:0 0 32px #e6cf9b16,inset 0 0 25px #cfb97a15}
+.festival-shortcut{display:inline-flex;align-items:center;gap:12px;border:1px solid color-mix(in srgb,var(--moon) 50%,transparent);background:linear-gradient(120deg,color-mix(in srgb,var(--moon) 13%,#1c2439),#151b32);padding:11px 17px;border-radius:30px;color:#f0e7ec;font-size:11px;letter-spacing:.04em;margin:2px 0 18px;transition:transform .25s,border-color .25s,box-shadow .25s}
+.festival-shortcut span{font:20px/1 var(--serif);color:var(--moon)}
+.festival-shortcut b{font-size:16px;font-weight:400;color:var(--moon)}
+.festival-shortcut:hover{transform:translateY(-2px);border-color:var(--moon);box-shadow:0 0 24px color-mix(in srgb,var(--moon) 18%,transparent)}
+
+/* Festival, integrado ao fólio de sua Lua */
+.luna-festival-feature{--moon:#e5cfad;scroll-margin-top:90px;border-radius:19px;margin-top:29px;border:1px solid color-mix(in srgb,var(--moon) 36%,transparent);overflow:hidden;position:relative;isolation:isolate;background:linear-gradient(125deg,color-mix(in srgb,var(--moon) 10%,#1c233a),#141a30 65%,#18182f)}
+.luna-festival-feature:before{content:'';position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle at 83% 13%,color-mix(in srgb,var(--moon) 12%,transparent),transparent 42%),radial-gradient(#ebe0d340 .8px,transparent 1.2px);background-size:auto,86px 92px;opacity:.66;z-index:-1}
+.festival-kicker{padding:22px 29px;display:flex;align-items:center;gap:12px;border-bottom:1px solid color-mix(in srgb,var(--moon) 21%,transparent);color:var(--moon);letter-spacing:.22em;font-size:9px}
+.festival-kicker-spark{font:22px/1 var(--serif);filter:drop-shadow(0 0 12px var(--moon))}
+.festival-kicker-count{margin-left:auto;color:#9ba5bd;letter-spacing:.1em}
+.festival-header{padding:41px 45px 24px;display:grid;grid-template-columns:minmax(0,1fr) 206px;align-items:center;gap:28px;position:relative}
+.festival-heading-copy{max-width:820px;z-index:1}.festival-sub{display:inline-block;border-left:2px solid var(--moon);padding-left:12px;color:var(--moon);font-size:11px;letter-spacing:.06em}
+.festival-header h3{font:400 clamp(38px,4.2vw,68px)/1.05 var(--serif);letter-spacing:-.035em;color:#fff6ed;margin:16px 0 17px;text-wrap:balance}
+.festival-header blockquote{font:italic clamp(20px,2vw,27px)/1.24 var(--serif);color:color-mix(in srgb,var(--moon) 65%,white 35%);margin:0}
+.festival-sigil{height:190px;width:190px;margin:auto;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;gap:8px;color:var(--moon);background:radial-gradient(circle,color-mix(in srgb,var(--moon) 21%,transparent),transparent 70%);box-shadow:0 0 0 18px color-mix(in srgb,var(--moon) 3%,transparent)}
+.festival-sigil:before,.festival-sigil-ring{content:'';position:absolute;inset:4px;border-radius:50%;border:1px solid color-mix(in srgb,var(--moon) 45%,transparent)}
+.festival-sigil-ring{inset:20px;border-style:dashed;animation:lunaSpin 70s linear infinite}
+.festival-sigil>span{font:85px/1 var(--serif);text-shadow:0 0 42px color-mix(in srgb,var(--moon) 60%,transparent);animation:lunaBreathe 6s ease-in-out infinite alternate}
+.festival-sigil small{font-size:8px;letter-spacing:.16em;color:#bbbecf}
+.festival-introduction{padding:0 45px 26px;max-width:900px;display:grid;gap:10px}
+.festival-introduction p,.festival-section-copy p{font-size:13px;line-height:1.95;color:#b6bed0;margin:0}
+.festival-ritual-grid{padding:0 29px 29px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
+.festival-ritual-card{min-width:0;padding:27px 26px;border:1px solid color-mix(in srgb,var(--moon) 26%,transparent);border-radius:14px;background:linear-gradient(135deg,color-mix(in srgb,var(--moon) 9%,#1a2139),#11182dbe);position:relative;overflow:hidden}
+.festival-ritual-card:after{content:'✧';position:absolute;right:18px;top:10px;font:60px var(--serif);color:color-mix(in srgb,var(--moon) 13%,transparent);pointer-events:none}
+.festival-card-heading{display:flex;gap:14px;align-items:start;margin-bottom:15px;position:relative;z-index:1}
+.festival-section-numeral{font:25px/1 var(--serif);color:var(--moon);flex:0 0 29px}
+.festival-card-heading h4{font:28px/1.15 var(--serif);margin:0;color:#f2eef7}
+.festival-section-copy{display:grid;gap:10px;position:relative;z-index:1}
+.festival-section-copy h4{font:21px/1.18 var(--serif);margin:13px 0 0;color:var(--moon)}
+.festival-closer{display:flex;align-items:center;justify-content:center;gap:12px;border-top:1px solid color-mix(in srgb,var(--moon) 23%,transparent);padding:16px 20px;font-size:9px;letter-spacing:.13em;color:#a9adbf;text-align:center}
+.festival-closer span{color:var(--moon);font:19px/1 var(--serif)}
+/* Festival index */
+.lunareth-festival-hub{scroll-margin-top:75px}
+.festival-hub-intro{display:grid;grid-template-columns:110px minmax(0,1fr);gap:23px;align-items:center;background:linear-gradient(105deg,#332d3fba,#141d33df);border:1px solid #e5d0bb3d;border-radius:15px;padding:25px 34px;margin:13px 0 24px}
+.ornament-glyph{font:90px/1 var(--serif);color:#ead0a6;text-shadow:0 0 40px #d5b89880;text-align:center}
+.festival-hub-intro h3{font:38px/1.1 var(--serif);margin:6px 0 9px}
+.festival-hub-intro p{max-width:780px;font-size:12px;line-height:1.9;color:#b9bece}
+.festival-index-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.festival-index-card{--moon:#d5c5a9;min-width:0;display:grid;grid-template-columns:65px minmax(0,1fr);grid-template-areas:'no no' 'rune moon' 'rune name' 'rune quote' 'foot foot';grid-template-rows:auto auto auto auto auto;column-gap:20px;align-items:center;border:1px solid color-mix(in srgb,var(--moon) 33%,transparent);border-radius:15px;background:radial-gradient(ellipse at 4% 40%,color-mix(in srgb,var(--moon) 16%,transparent),transparent 60%),#171c30e8;text-align:left;padding:22px 23px 18px;color:#efedf8;transition:transform .3s,box-shadow .3s,border-color .3s}
+.festival-index-card:hover{transform:translateY(-4px);border-color:var(--moon);box-shadow:0 10px 32px #02020b6b,0 0 28px color-mix(in srgb,var(--moon) 15%,transparent)}
+.fest-index-num{grid-area:no;font-size:9px;letter-spacing:.18em;color:#9094ae;margin-bottom:16px}
+.fest-index-icon{grid-area:rune;display:grid;place-items:center;font:55px/1 var(--serif);width:69px;height:69px;border:1px solid color-mix(in srgb,var(--moon) 45%,transparent);border-radius:50%;color:var(--moon);text-shadow:0 0 25px color-mix(in srgb,var(--moon) 60%,transparent)}
+.fest-index-moon{grid-area:moon;font-size:8px;letter-spacing:.16em;color:var(--moon);margin:0 0 2px}
+.festival-index-card strong{grid-area:name;font:30px/1.13 var(--serif);color:#f6eff9}
+.festival-index-card em{grid-area:quote;font:italic 18px/1.15 var(--serif);color:#a5adc3;margin-top:6px}
+.fest-index-open{grid-area:foot;display:flex;align-items:center;justify-content:space-between;margin-top:19px;padding-top:12px;border-top:1px solid color-mix(in srgb,var(--moon) 21%,transparent);color:var(--moon);font-size:10px;letter-spacing:.05em}
+.fest-index-open b{font:16px var(--serif)}
+.festivals-closing{margin-top:18px;padding:30px;border:1px solid #bcb6d13d;border-radius:14px;text-align:center;background:radial-gradient(ellipse at center,#9b8fb020,transparent 65%),#161b30bd}
+.festivals-closing span{font:28px var(--serif);color:#e6cdac}
+.festivals-closing p{font:italic 25px/1.4 var(--serif);max-width:730px;margin:10px auto 0;color:#dcd6e6}
+
+/* ═══ CINCO GRANDES CASAS DE ELARIN ═══ */
+.houses-view{color:#f3f0fa}
+.houses-cover{isolation:isolate;min-height:385px;position:relative;overflow:hidden;display:grid;grid-template-columns:minmax(0,1fr) 37%;align-items:center;border-radius:20px;border:1px solid #ccb7df47;background:radial-gradient(ellipse at 80% 38%,#907bb040,transparent 40%),radial-gradient(ellipse at 12% 50%,#42345339,transparent 72%),linear-gradient(120deg,#231d39,#111a2d)}
+.houses-cover:before{content:'';position:absolute;inset:0;pointer-events:none;background-image:radial-gradient(#d2c5eb73 1px,transparent 1.2px),radial-gradient(#f6e8c873 .75px,transparent 1px);background-size:97px 88px,154px 117px;background-position:13px 19px,58px 35px;opacity:.24}
+.houses-cover-content{padding:40px 35px 42px 46px;z-index:2;max-width:800px}
+.houses-micro{display:block;font-size:9px;letter-spacing:.21em;color:#f0d4ba}
+.houses-overline{display:block;margin:35px 0 13px;font-size:10px;letter-spacing:.26em;color:#c8bfdd}
+.houses-cover h1{font:400 clamp(55px,6vw,87px)/.96 var(--serif);margin:0 0 23px;letter-spacing:-.035em}
+.houses-cover h1 em{color:#edd8b3;font-weight:400}
+.houses-cover-content>p{font-size:13px;line-height:1.88;color:#bdc1d2;max-width:540px}
+.houses-cover-rule{border-top:1px solid #d5cfdd30;margin-top:29px;padding-top:13px;display:flex;gap:23px;flex-wrap:wrap;color:#c6b8ca;font-size:9px;letter-spacing:.15em}
+.houses-cover-art{width:335px;height:335px;justify-self:center;align-self:center;position:relative;display:grid;place-items:center;filter:drop-shadow(0 0 30px #e0c9ed17);animation:houseFloat 8s ease-in-out infinite alternate}
+.houses-art-orbit{inset:25px;position:absolute;border:1px solid #d4bdf04a;border-radius:50%;box-shadow:0 0 0 19px #cdbade08}
+.houses-art-orbit.o2{inset:68px;border-style:dashed;border-color:#ead3ae41;animation:lunaSpin 120s linear infinite}
+.houses-art-center{width:110px;height:110px;display:grid;place-items:center;border-radius:50%;border:1px solid #ead1b55c;background:radial-gradient(circle,#c7adc446,#121629);font:88px/1 var(--serif);color:#ead5aa;text-shadow:0 0 39px #e7cba377;z-index:1}
+.houses-art-satellite{position:absolute;z-index:2;font:32px/1 var(--serif);text-shadow:0 0 24px currentColor}
+.houses-art-satellite.sat1{top:1%;left:46%;color:#83dcaa}.houses-art-satellite.sat2{right:6%;top:35%;color:#dbe7ef}.houses-art-satellite.sat3{right:19%;bottom:7%;color:#8bd9f6}.houses-art-satellite.sat4{left:12%;bottom:12%;color:#ffae78}.houses-art-satellite.sat5{left:3%;top:35%;color:#d5d6ff}
+@keyframes houseFloat{to{transform:translateY(-11px)}}
+.houses-card-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px;margin-top:24px}
+.house-card{--house:#b9e1d0;position:relative;overflow:hidden;display:flex;flex-direction:column;min-height:340px;padding:20px 23px 18px;text-align:left;color:#fff;border-radius:17px;border:1px solid color-mix(in srgb,var(--house) 32%,transparent);background:radial-gradient(circle at 50% 43%,color-mix(in srgb,var(--house) 18%,transparent),transparent 48%),linear-gradient(140deg,#25243d,#121d30 86%);transition:transform .28s,border-color .28s,box-shadow .28s}
+.house-card:before{content:'';position:absolute;inset:0;pointer-events:none;background-image:radial-gradient(#f4ebeb64 .65px,transparent 1px);background-size:72px 81px;opacity:.3}
+.house-card:hover,.house-card.selected{transform:translateY(-6px);border-color:var(--house);box-shadow:0 20px 40px #03050d84,0 0 40px color-mix(in srgb,var(--house) 14%,transparent)}
+.house-card-ordinal{font-size:9px;letter-spacing:.19em;color:#a7a6bc;z-index:1}
+.house-card-sigil{position:relative;width:158px;height:158px;margin:12px auto 0;display:grid;place-items:center;z-index:1;color:var(--house);filter:drop-shadow(0 0 13px color-mix(in srgb,var(--house) 35%,transparent))}
+.house-card-halo{position:absolute;inset:7px;border:1px solid color-mix(in srgb,var(--house) 40%,transparent);border-radius:50%;box-shadow:0 0 0 16px color-mix(in srgb,var(--house) 4%,transparent),inset 0 0 24px color-mix(in srgb,var(--house) 7%,transparent)}
+.house-svg{display:block;width:124px;height:124px;color:inherit;stroke:currentColor;opacity:.95;position:relative;transition:transform .5s ease;filter:drop-shadow(0 0 15px color-mix(in srgb,var(--house) 28%,transparent))}
+.house-card:hover .house-svg{transform:scale(1.1) rotate(4deg)}
+.house-card-copy{display:flex;flex-direction:column;gap:4px;z-index:1;margin-top:auto}
+.house-card-copy small{font-size:9px;letter-spacing:.14em;color:var(--house)}
+.house-card-copy strong{font:37px/1 var(--serif);margin-top:2px;color:#faf4f7}
+.house-card-copy em{font:italic 17px/1.2 var(--serif);color:#aaafc1}
+.house-card-cta{display:flex;align-items:center;justify-content:space-between;border-top:1px solid color-mix(in srgb,var(--house) 25%,transparent);padding-top:13px;margin-top:16px;color:var(--house);font-size:10px;z-index:1}
+.house-card-cta b{font-size:16px;font-weight:400}
+.houses-council-teaser{width:100%;margin-top:15px;border:1px solid #d6caab64;border-radius:16px;display:flex;align-items:center;gap:20px;padding:24px 29px;text-align:left;min-height:140px;background:radial-gradient(ellipse at 15% 50%,#f5e5b622,transparent 60%),linear-gradient(115deg,#2b2741,#171b32);color:#fbf1e8;transition:.25s}
+.houses-council-teaser:hover,.houses-council-teaser.selected{transform:translateY(-3px);border-color:#f1deba;box-shadow:0 0 30px #d7bda326}
+.council-teaser-icon{font:34px var(--serif);color:#e7d1af;flex:0 0 140px;text-align:center;text-shadow:0 0 28px #e2c9a965}
+.houses-council-teaser>span:nth-child(2){display:flex;flex-direction:column;gap:4px;flex:1}
+.houses-council-teaser small{font-size:9px;letter-spacing:.19em;color:#dec6ad}
+.houses-council-teaser strong{font:32px/1.05 var(--serif)}
+.houses-council-teaser em{font-size:11px;color:#aeb5c8;font-style:normal}
+.houses-council-teaser>b{font-size:12px;color:#dfcba8;font-weight:500;white-space:nowrap}
+.houses-empty{text-align:center;border:1px solid #c7bde538;border-radius:16px;margin-top:19px;padding:36px 25px;background:radial-gradient(ellipse at 50% 5%,#9988bc1b,transparent 70%),#121a31c9}
+.houses-empty span{font:35px var(--serif);color:#d8c0a5}
+.houses-empty h3{font:37px var(--serif);margin:9px 0 5px}
+.houses-empty p{font-size:12px;color:#aeb7c9;max-width:540px;margin:auto;line-height:1.8}
+.houses-empty[hidden]{display:none!important}
+.house-detail{scroll-margin-top:85px;margin-top:25px}
+.house-detail-cover{min-height:297px;position:relative;isolation:isolate;border:1px solid color-mix(in srgb,var(--house) 35%,transparent);border-radius:18px;background:radial-gradient(ellipse at 75% 48%,color-mix(in srgb,var(--house) 18%,transparent),transparent 45%),linear-gradient(110deg,#25263e,#111a31);overflow:hidden;display:grid;grid-template-columns:minmax(0,1fr) 280px;align-items:center}
+.house-detail-cover:before{content:'';position:absolute;inset:0;z-index:-1;background:radial-gradient(#f4e8c75b .65px,transparent .95px);background-size:100px 94px;opacity:.4}
+.house-detail-copy{padding:33px 45px;min-width:0;position:relative;z-index:1}
+.house-detail-kicker{font-size:9px;letter-spacing:.17em;color:var(--house)}
+.house-detail-copy h2{font:400 clamp(51px,6vw,79px)/1 var(--serif);margin:18px 0 6px;color:#f9f4fc}
+.house-detail-copy h2 em{color:var(--house);font-weight:400}
+.house-detail-sub{font:29px/1.1 var(--serif);color:#c9c7d4;margin:0}
+.house-detail-copy blockquote{font:italic 23px/1.25 var(--serif);color:#b5b9cc;margin:24px 0 0;max-width:560px}
+.house-detail-crest{width:236px;height:236px;border-radius:50%;border:1px solid color-mix(in srgb,var(--house) 47%,transparent);position:relative;display:grid;place-items:center;margin:auto;box-shadow:0 0 0 24px color-mix(in srgb,var(--house) 5%,transparent),0 0 0 48px color-mix(in srgb,var(--house) 2%,transparent),inset 0 0 32px color-mix(in srgb,var(--house) 9%,transparent);color:var(--house);filter:drop-shadow(0 0 20px color-mix(in srgb,var(--house) 25%,transparent))}
+.house-detail-orbit{position:absolute;inset:18px;border:1px dashed color-mix(in srgb,var(--house) 36%,transparent);border-radius:50%;animation:lunaSpin 95s linear infinite}
+.house-detail-crest .house-svg{width:164px;height:164px}
+.house-trait-list{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin:14px 0}
+.house-trait-list article{display:flex;flex-direction:column;gap:9px;border:1px solid color-mix(in srgb,var(--house) 24%,transparent);border-radius:11px;padding:19px 17px;min-width:0;background:linear-gradient(145deg,color-mix(in srgb,var(--house) 7%,#202538),#151d30)}
+.house-trait-list span{font-size:9px;letter-spacing:.11em;color:var(--house)}
+.house-trait-list strong{font:22px/1.18 var(--serif);color:#f1eafa}
+.house-detail-body{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.house-history,.house-traditions{border:1px solid color-mix(in srgb,var(--house) 24%,transparent);border-radius:14px;padding:30px;background:linear-gradient(125deg,color-mix(in srgb,var(--house) 9%,#1b2338),#121a2dec)}
+.house-history h3,.house-traditions h3{font:39px/1.12 var(--serif);color:#fbf0f5;margin:12px 0 20px}
+.house-history p{font-size:13px;line-height:1.98;color:#b5bccc;margin:0 0 15px}
+.house-history .eyebrow,.house-traditions .eyebrow{color:var(--house)}
+.house-custom{display:flex;align-items:start;gap:17px;border-bottom:1px solid color-mix(in srgb,var(--house) 18%,transparent);padding:16px 0}
+.house-custom:last-child{border-bottom:0}
+.house-custom span{font:27px var(--serif);color:var(--house);min-width:32px}
+.house-custom p{font-size:13px;line-height:1.75;color:#c4c4d2;margin:0}
+.house-moon-jump{font-size:12px;padding:12px 16px;border:1px solid color-mix(in srgb,var(--house) 55%,transparent);background:color-mix(in srgb,var(--house) 10%,#202437);color:#f2f2fa;border-radius:9px;display:flex;align-items:center;gap:14px;margin-top:27px;max-width:fit-content;transition:.2s}
+.house-moon-jump:hover{border-color:var(--house);box-shadow:0 0 24px color-mix(in srgb,var(--house) 15%,transparent)}
+.house-moon-jump b{color:var(--house);font-size:16px;font-weight:400}
+.house-next{display:flex;justify-content:space-between;margin-top:14px;gap:12px}
+.house-next button{padding:12px 19px;border:1px solid color-mix(in srgb,var(--house) 40%,transparent);border-radius:10px;background:#1b2238;color:var(--house);font-size:12px;transition:.2s}
+.house-next button:hover{background:#303047}
+.houses-footer{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;margin-top:37px;border-top:1px solid #d1c5e133;padding:18px 0;color:#a7a5b7;font-size:9px;letter-spacing:.15em}
+/* Council */
+.house-council{margin-top:26px;scroll-margin-top:85px}
+.house-council-hero{position:relative;text-align:center;padding:35px 25px 23px;border:1px solid #e7d2a849;border-radius:16px 16px 0 0;background:radial-gradient(ellipse at top,#ba98721f,transparent 64%),#191c32}
+.house-council-hero h2{font:400 clamp(43px,6vw,75px)/1 var(--serif);margin:17px 0 15px}
+.house-council-hero h2 em{color:#e7d1af}
+.house-council-hero>p{font-size:13px;line-height:1.83;color:#b3bbc9;max-width:680px;margin:auto}
+.council-separator{display:block;font:26px var(--serif);color:#e9cea7;margin-top:20px}
+.council-room{border:1px solid #d8cead3b;border-top:0;border-radius:0 0 17px 17px;background:radial-gradient(ellipse at 50% 45%,#9e865d22,transparent 55%),linear-gradient(125deg,#181d31,#111727);position:relative;overflow:hidden;padding:32px 25px 30px}
+.council-room-ring{position:absolute;pointer-events:none;inset:30px 16% -190px;border:1px solid #dfcfad24;border-radius:50%;box-shadow:0 0 0 36px #e6caa806,0 0 0 75px #e6caa805}
+.council-room-heading{text-align:center;position:relative}
+.council-room-heading small{font-size:9px;letter-spacing:.19em;color:#decca9}
+.council-room-heading h3{font:36px/1.15 var(--serif);margin:10px 0}
+.council-room-heading p{font-size:12px;color:#aab3c4;max-width:660px;margin:0 auto;line-height:1.75}
+.council-lanterns{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;align-items:end;max-width:990px;margin:43px auto 26px;position:relative}
+.council-lantern{--house:#efd6ad;min-width:0;display:flex;flex-direction:column;align-items:center;gap:6px;position:relative;background:none;color:#c2bfd1;padding:0 5px 13px;transition:transform .25s;outline-offset:4px}
+.council-lantern:hover{transform:translateY(-7px)}
+.lantern-head{display:block;width:16px;height:14px;border:2px solid #abaac0;border-bottom:0;border-radius:10px 10px 0 0;position:relative;top:7px}
+.lantern-glass{display:grid;place-items:center;width:90px;height:120px;border:2px solid #7f839d;border-radius:35% 35% 13px 13px;position:relative;background:linear-gradient(100deg,#20243b,#131a2c 40%,#222638);box-shadow:inset 0 0 26px #080d1c,0 14px 25px #050714a8;transition:.45s}
+.lantern-glass:before,.lantern-glass:after{content:'';position:absolute;left:11px;right:11px;border-top:1px solid #9495b850;top:20px}
+.lantern-glass:after{top:auto;bottom:15px}
+.lantern-flame{font:54px/1 var(--serif);color:#6f7188;opacity:.7;filter:grayscale(1);transition:.45s}
+.lantern-base{width:100px;height:8px;background:linear-gradient(90deg,#575c77,#adb0c6,#575c77);border-radius:5px;box-shadow:0 4px 12px #070b16}
+.council-lantern strong{font:24px/1.08 var(--serif);margin-top:10px;color:#d9d6e5}
+.council-lantern small{font-size:9px;letter-spacing:.15em;color:#8e95ab}
+.council-lantern[aria-pressed="true"] .lantern-glass{border-color:color-mix(in srgb,var(--house) 85%,white 15%);background:radial-gradient(circle at 50% 70%,color-mix(in srgb,var(--house) 44%,transparent),transparent 70%),#242639;box-shadow:inset 0 0 26px color-mix(in srgb,var(--house) 18%,transparent),0 0 38px color-mix(in srgb,var(--house) 48%,transparent),0 0 86px color-mix(in srgb,var(--house) 18%,transparent)}
+.council-lantern[aria-pressed="true"] .lantern-flame{color:var(--house);opacity:1;filter:none;text-shadow:0 0 28px var(--house);animation:lunaBreathe 2.5s ease-in-out infinite alternate}
+.council-lantern[aria-pressed="true"] strong{color:var(--house)}
+.council-meter{position:relative;display:flex;justify-content:space-between;gap:12px;align-items:center;border-top:1px solid #ccb9a13e;padding-top:19px;font-size:12px;color:#e5d2ae}
+.council-meter button{border:1px solid #c5baa453;border-radius:9px;padding:9px 12px;font-size:10px;color:#b8b0aa;white-space:nowrap;background:#26283e80;transition:.2s}
+.council-meter button:hover{color:#f3e6d5;border-color:#e3d6bb}
+.council-room.all-lit{box-shadow:inset 0 0 60px #efdaa51e}
+.council-room.all-lit .council-meter{color:#fff0c7}
+.council-doctrine{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:15px}
+.council-doctrine article{border:1px solid #cfc1b03a;border-radius:13px;padding:25px 23px;background:linear-gradient(125deg,#25283d,#151e32)}
+.council-doctrine span{font:33px var(--serif);color:#dec9a8}
+.council-doctrine strong{display:block;font:25px/1.18 var(--serif);margin:11px 0}
+.council-doctrine p{font-size:12px;line-height:1.8;color:#b2b8c8;margin:0}
+
+/* Responsividade */
+@media(max-width:1280px){.houses-card-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.house-trait-list{grid-template-columns:repeat(3,minmax(0,1fr))}.houses-cover-art{transform:scale(.92)}}
+@media(max-width:1000px){.festival-header{grid-template-columns:minmax(0,1fr) 145px;padding:29px}.festival-sigil{width:142px;height:142px}.festival-sigil>span{font-size:65px}.festival-introduction{padding:0 29px 24px}.houses-cover{grid-template-columns:1fr 230px}.houses-cover-content{padding:35px 15px 37px 29px}.houses-cover-art{width:230px;height:230px;transform:none}.houses-art-center{width:84px;height:84px;font-size:64px}.houses-cover h1{font-size:62px}.house-detail-cover{grid-template-columns:minmax(0,1fr) 205px}.house-detail-crest{width:165px;height:165px}.house-detail-crest .house-svg{width:116px;height:116px}.house-detail-copy{padding:28px}.house-detail-body{grid-template-columns:1fr}.house-trait-list{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:700px){.lunareth-extra-folders{grid-template-columns:1fr}.festival-index-grid{grid-template-columns:1fr}.festival-header{grid-template-columns:1fr;gap:2px;padding:25px 23px}.festival-heading-copy h3{font-size:47px}.festival-sigil{height:90px;width:90px;position:absolute;right:14px;top:16px;opacity:.2}.festival-sigil>span{font-size:56px}.festival-sigil small{display:none}.festival-introduction{padding:0 23px 23px}.festival-ritual-grid{grid-template-columns:1fr;padding:0 14px 15px}.festival-ritual-card{padding:24px 19px}.festival-hub-intro{grid-template-columns:1fr;gap:7px;padding:24px 19px}.ornament-glyph{font-size:51px;text-align:left}.festival-hub-intro h3{font-size:31px}.houses-cover{grid-template-columns:1fr;min-height:380px}.houses-cover-content{padding:34px 24px;position:relative}.houses-cover h1{font-size:55px;position:relative;z-index:2}.houses-cover-content>p{position:relative;z-index:2}.houses-cover-art{position:absolute;right:-45px;top:33px;width:200px;height:200px;opacity:.28;transform:none}.houses-card-grid{grid-template-columns:1fr 1fr;gap:10px}.house-card{min-height:270px;padding:14px}.house-card-sigil{width:116px;height:116px;margin:10px auto}.house-svg{width:93px;height:93px}.house-card-copy strong{font-size:29px}.house-card-copy small{font-size:8px}.house-card-copy em{font-size:14px}.house-card-ordinal{font-size:8px}.houses-council-teaser{gap:12px;padding:19px}.council-teaser-icon{flex-basis:50px;font-size:25px}.houses-council-teaser strong{font-size:26px}.houses-council-teaser>b{display:none}.house-detail-cover{display:block;min-height:305px}.house-detail-copy{padding:27px 24px;position:relative;z-index:2}.house-detail-copy h2{font-size:50px}.house-detail-sub{font-size:25px}.house-detail-copy blockquote{font-size:21px}.house-detail-crest{position:absolute;top:20px;right:10px;width:140px;height:140px;opacity:.23}.house-detail-crest .house-svg{width:92px;height:92px}.house-trait-list{grid-template-columns:repeat(2,minmax(0,1fr))}.house-trait-list article{padding:15px}.house-trait-list strong{font-size:20px}.house-history,.house-traditions{padding:24px 20px}.house-history h3,.house-traditions h3{font-size:34px}.council-lanterns{grid-template-columns:repeat(3,minmax(0,1fr));justify-content:center;gap:22px 12px;margin-top:35px}.lantern-glass{width:72px;height:96px}.lantern-base{width:80px}.lantern-flame{font-size:46px}.council-lantern strong{font-size:21px}.council-doctrine{grid-template-columns:1fr}}
+@media(max-width:420px){.festival-kicker{flex-wrap:wrap;gap:7px;padding:19px 15px}.festival-kicker-count{margin-left:0;width:100%;padding-left:25px}.festival-header h3{font-size:39px}.festival-introduction{padding:0 18px 21px}.festival-card-heading h4{font-size:25px}.festival-index-card{grid-template-columns:54px minmax(0,1fr);padding:18px 16px;column-gap:14px}.fest-index-icon{width:53px;height:53px;font-size:40px}.festival-index-card strong{font-size:25px}.houses-cover h1{font-size:48px}.houses-cover-rule{gap:10px}.houses-card-grid{grid-template-columns:1fr}.house-card{min-height:300px}.house-card-sigil{width:145px;height:145px}.house-svg{width:119px;height:119px}.house-detail-copy h2{font-size:42px}.house-trait-list{grid-template-columns:1fr 1fr}.house-trait-list strong{font-size:18px}.council-lanterns{grid-template-columns:repeat(2,1fr)}.council-meter{align-items:start;flex-direction:column}.house-next{gap:6px}.house-next button{font-size:11px;padding:10px}}
+@media(prefers-reduced-motion:reduce){.houses-cover-art,.house-card .house-svg,.festival-sigil-ring,.house-detail-orbit,.council-lantern[aria-pressed="true"] .lantern-flame{animation:none!important;transition:none!important}}
+/* Ordem editorial: texto à esquerda, brasão orbital à direita. */
+@media(min-width:701px){
+  .houses-cover-content{grid-column:1;grid-row:1}
+  .houses-cover-art{grid-column:2;grid-row:1}
+}
+.festival-manifesto{border:1px solid #d2c3aa33;border-radius:14px;background:linear-gradient(115deg,#22233ac9,#131d32a8);padding:25px 31px;margin-bottom:20px}
+.festival-manifesto>.eyebrow{color:#e2ca9f}
+.festival-manifesto-text{column-count:2;column-gap:33px;margin-top:12px}
+.festival-manifesto-text p{break-inside:avoid;color:#abb2c5;font-size:12px;line-height:1.92;margin:0 0 13px}
+@media(max-width:700px){.festival-manifesto{padding:22px}.festival-manifesto-text{column-count:1}}

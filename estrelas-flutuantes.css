@@ -1,0 +1,45 @@
+/* Céu tridimensional e discreto: três planos de estrelinhas nas capas. */
+.profile-cover,.language-cover,.lunareth-cover,.houses-cover,.house-detail-cover{isolation:isolate}
+.banner-sparkles{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:1;contain:layout style paint;--star-color:var(--theme,#e5d7ff)}
+.profile-cover .banner-sparkles{--star-color:var(--theme,#e6d8f4)}
+.cover-astraelis .banner-sparkles{--star-color:#f4d59c}
+.cover-ovelha .banner-sparkles{--star-color:#cba8ff}
+.cover-sirius .banner-sparkles{--star-color:#a6d7ff}
+.cover-lyranoctis .banner-sparkles{--star-color:#f3b9dc}
+.language-cover .banner-sparkles{--star-color:#b0ede3}
+.lunareth-cover .banner-sparkles{--star-color:#f0dbbb}
+.houses-cover .banner-sparkles{--star-color:#ddcaff}
+.house-detail-cover .banner-sparkles{--star-color:var(--house,#ddcaff)}
+
+/* O conteúdo sempre à frente das estrelas. */
+.profile-cover .profile-cover-inner,
+.language-cover > :not(.banner-sparkles):not(.language-cover-sigil),
+.lunareth-cover-copy,.lunareth-astrarium,
+.houses-cover-content,.houses-cover-art,
+.house-detail-copy,.house-detail-crest{position:relative;z-index:2}
+.language-cover > .banner-sparkles{position:absolute;z-index:1}
+.language-cover > .language-cover-sigil{position:absolute;z-index:2}
+
+.banner-sparkles .sky-depth{position:absolute;inset:-13px;pointer-events:none;transition:transform .14s linear}
+.banner-sparkles .sky-depth-far{transform:translate3d(var(--sky-far-x,0px),var(--sky-far-y,0px),0);filter:blur(.35px)}
+.banner-sparkles .sky-depth-mid{transform:translate3d(var(--sky-mid-x,0px),var(--sky-mid-y,0px),0)}
+.banner-sparkles .sky-depth-near{transform:translate3d(var(--sky-near-x,0px),var(--sky-near-y,0px),0)}
+.banner-sparkles .flying-star{position:absolute;left:var(--x);top:var(--y);width:var(--size);height:var(--size);font-size:var(--size);color:var(--star-color);opacity:var(--opacity);line-height:1;text-align:center;transform-origin:center;transform:translate3d(0,0,0) scale(.86);text-shadow:0 0 8px currentColor,0 0 16px currentColor;animation:starDrift var(--duration) ease-in-out var(--delay) infinite alternate,starShine var(--twinkle-duration) ease-in-out var(--delay) infinite alternate}
+.banner-sparkles .sky-depth-far .flying-star{text-shadow:0 0 3px currentColor}
+.banner-sparkles .sky-depth-near .flying-star{text-shadow:0 0 11px currentColor,0 0 22px currentColor}
+.banner-sparkles .star-dot{border-radius:50%;background:currentColor;box-shadow:0 0 5px currentColor,0 0 12px color-mix(in srgb,currentColor 30%,transparent)}
+.banner-sparkles .star-cross{font-family:Georgia,serif}
+.banner-sparkles .star-glimmer{filter:drop-shadow(0 0 4px currentColor)}
+@keyframes starDrift{0%{transform:translate3d(-4px,3px,0) rotate(-8deg) scale(.82)}50%{transform:translate3d(3px,-3px,0) rotate(4deg) scale(1.05)}100%{transform:translate3d(var(--dx),var(--dy),0) rotate(9deg) scale(.92)}}
+@keyframes starShine{0%{opacity:calc(var(--opacity) * .52)}46%{opacity:var(--opacity)}100%{opacity:calc(var(--opacity) * .63)}}
+@media(max-width:950px){.banner-sparkles{opacity:.9}}
+@media(max-width:700px){.banner-sparkles{opacity:.68}.banner-sparkles .sky-depth-near{opacity:.78}}
+@media(prefers-reduced-motion:reduce){.banner-sparkles .flying-star{animation:none!important;transform:none}.banner-sparkles .sky-depth{transition:none!important;transform:none!important}}
+body.reduce-motion .banner-sparkles .flying-star{animation:none!important;transform:none}
+body.reduce-motion .banner-sparkles .sky-depth{transition:none!important;transform:none!important}
+
+/* Lampejos ocasionais: estrelas diferentes piscam em ritmos independentes. */
+.banner-sparkles .rare-glint{animation:starDrift var(--duration) ease-in-out var(--delay) infinite alternate,starShine var(--twinkle-duration) ease-in-out var(--delay) infinite alternate,rareStarGlint var(--glint-duration) ease-in-out var(--delay) infinite!important}
+@keyframes rareStarGlint{0%,17%,25%,50%,83%,100%{filter:brightness(1)}20%,22%{filter:brightness(3) drop-shadow(0 0 7px currentColor)}64%,66%{filter:brightness(2.2) drop-shadow(0 0 5px currentColor)}}
+@media(prefers-reduced-motion:reduce){.banner-sparkles .rare-glint{animation:none!important}}
+body.reduce-motion .banner-sparkles .rare-glint{animation:none!important}
